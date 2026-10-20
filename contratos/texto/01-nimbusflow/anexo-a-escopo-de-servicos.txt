@@ -1,0 +1,37 @@
+EXHIBIT A — ESCOPO DE SERVIÇOS
+Contrato de Licenciamento de Software como Serviço — NimbusFlow Tecnologia Ltda. e Meridiano Alimentos S.A.
+Data de referência: 14 de março de 2024
+
+A.1. MÓDULOS LICENCIADOS
+Módulo | Descrição | Usuários
+Service Desk | Registro, triagem e resolução de chamados de consumidores | 260
+Voice Connect | Integração com central telefônica e gravação de chamadas | 40
+Insights | Relatórios operacionais e painéis de produtividade | 20
+
+A.2. CATEGORIAS DE DADOS PROCESSADOS NA PLATAFORMA
+A Plataforma processa, no curso ordinário da operação de atendimento, as seguintes categorias de dados relativos a consumidores do Cliente:
+nome completo, CPF e data de nascimento;
+endereço residencial e endereço de entrega;
+endereço de correio eletrônico e números de telefone;
+histórico de compras e de interações com o Cliente;
+gravações de chamadas telefônicas e transcrições automatizadas;
+dados de geolocalização aproximada, quando o consumidor acessa o canal digital.
+A Plataforma processa igualmente dados de identificação e de credenciais dos Usuários Autorizados do Cliente.
+A.3. NÍVEIS DE SERVIÇO
+Severidade | Definição | Tempo de primeira resposta | Tempo de solução
+S1 — Crítica | Plataforma indisponível para todos os usuários | 30 minutos | 4 horas
+S2 — Alta | Módulo indisponível ou degradação relevante | 2 horas | 12 horas
+S3 — Média | Funcionalidade específica com defeito, com contorno disponível | 8 horas | 5 dias úteis
+S4 — Baixa | Dúvida, solicitação de configuração ou melhoria | 24 horas | conforme planejamento
+
+Disponibilidade mensal contratada: 99,5%, apurada mensalmente, excluídas as janelas de manutenção programada comunicadas com 48 horas de antecedência.
+A.4. SERVIÇOS CORRELATOS INCLUÍDOS
+provisionamento e desprovisionamento de Usuários Autorizados;
+configuração de fluxos de atendimento e de regras de triagem;
+disparo de mensagens transacionais aos consumidores, tais como confirmação de abertura de chamado, atualização de status e pesquisa de satisfação, por correio eletrônico e mensagem de texto;
+exportação periódica de dados em formato estruturado, mediante solicitação.
+A.5. SERVIÇOS EXPRESSAMENTE NÃO INCLUÍDOS
+migração de dados de sistemas legados;
+desenvolvimento de integrações sob medida;
+treinamento presencial de usuários;
+customização de relatórios além dos modelos padrão do módulo Insights.

@@ -51,15 +51,19 @@ risco.
 ├── CLAUDE.md                    este arquivo
 ├── .claude/agents/              os seis agentes
 ├── .claude/skills/              método, normas, playbook, redline, Visual Law
-├── contratos/texto/             o texto dos contratos, que os agentes leem (não incluído)
-├── schemas/                     formato do achado e da matriz de risco (não incluído)
+├── contratos/docx/              os contratos em .docx (documento de referência)
+├── contratos/texto/             o texto extraído do .docx, que é o que os agentes leem
+├── contratos/build/             docx2txt.py, o extrator
+├── schemas/                     formato do achado e da matriz de risco
 └── saida/                       o que os agentes gravam
 ```
 
 ## Ordem de execução de uma rodada
 
-1. Os três especialistas rodam sobre o mesmo contrato, sem se ver.
-2. Cada um grava `saida/achados/<contrato>-<agente>.json`.
-3. O orquestrador lê os três, cruza, confronta com o playbook, grava `saida/matriz-risco.json`
+1. Contrato novo: `python contratos/build/docx2txt.py --only <id>` gera o texto em
+   `contratos/texto/<id>/` (Read não abre `.docx`).
+2. Os três especialistas rodam sobre o mesmo contrato, sem se ver.
+3. Cada um grava `saida/achados/<contrato>-<agente>.json`.
+4. O orquestrador lê os três, cruza, confronta com o playbook, grava `saida/matriz-risco.json`
    e `saida/revisados/<contrato>-revisado.docx`.
-4. Revisão humana do redline antes de qualquer uso.
+5. Revisão humana do redline antes de qualquer uso.

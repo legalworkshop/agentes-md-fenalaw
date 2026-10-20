@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fenalaw2026.exemplo/schemas/achado.schema.json",
+  "title": "Saída de um agente especialista sobre um contrato",
+  "type": "object",
+  "required": ["contrato_id", "agente", "documentos_lidos", "achados"],
+  "additionalProperties": false,
+  "properties": {
+    "contrato_id": {
+      "type": "string",
+      "enum": ["01-nimbusflow", "02-vetor-analytics", "03-prisma-facilities", "04-aureo-contabil", "00-exemplo-ficticio"],
+      "description": "00-exemplo-ficticio só existe no arquivo de exemplo do repositório público"
+    },
+    "agente": {
+      "type": "string",
+      "enum": ["privacidade-lgpd", "contratual-comercial", "consistencia-documental"]
+    },
+    "executado_em": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 em UTC"
+    },
+    "documentos_lidos": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Nome dos arquivos .docx efetivamente lidos"
+    },
+    "achados": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/achado" }
+    },
+    "observacoes": {
+      "type": ["string", "null"],
+      "description": "Nota livre do agente: anexo ausente, limite de escopo, razão de lista vazia"
+    }
+  },
+  "$defs": {
+    "achado": {
+      "type": "object",
+      "required": [
+        "id", "contrato_id", "agente", "achado", "localizacao",
+        "trecho", "severidade", "confianca"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[PCD]-\\d{2}$",
+          "description": "Prefixo por matéria: P privacidade, C comercial, D consistência"
+        },
+        "contrato_id": { "type": "string" },
+        "agente": { "type": "string" },
+        "achado": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400,
+          "description": "Uma frase afirmativa: o problema e a consequência. Sem adjetivo de alarme"
+        },
+        "localizacao": {
+          "type": "string",
+          "description": "Cláusula, item, anexo. Ex.: 'Cláusula 5.5' ou 'Anexo C, item C.2'"
+        },
+        "trecho": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 400,
+          "description": "Citação LITERAL do documento. Em achado por ausência de cláusula, cita o trecho onde a lacuna está"
+        },
+        "severidade": {
+          "type": "string",
+          "enum": ["critico", "alto", "medio", "baixo"]
+        },
+        "fundamento": {
+          "type": ["string", "null"],
+          "description": "Dispositivo citado, coberto por referencias-normativas. null quando não houver"
+        },
+        "posicao_playbook": {
+          "type": ["string", "null"],
+          "enum": ["aceitavel", "negociavel", "linha_vermelha", "sem_posicao", null]
+        },
+        "confianca": {
+          "type": "string",
+          "enum": ["alta", "media", "baixa"]
+        },
+        "evidencia_faltante": {
+          "type": ["string", "null"],
+          "description": "Obrigatório quando confianca = baixa. O que precisaria ser verificado, em uma frase"
+        },
+        "redline_sugerido": {
+          "type": ["string", "null"],
+          "description": "Texto de cláusula pronto, no estilo do contrato analisado, sem marcação. null quando não houver solução redigível"
+        },
+        "cruzamentos": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^X-\\d+$" },
+          "default": []
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "confianca": { "const": "baixa" } } },
+          "then": { "required": ["evidencia_faltante"],
+                    "properties": { "evidencia_faltante": { "type": "string", "minLength": 10 } } }
+        }
+      ]
+    }
+  }
+}

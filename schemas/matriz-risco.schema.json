@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fenalaw2026.exemplo/schemas/matriz-risco.schema.json",
+  "title": "Matriz de risco consolidada pelo orquestrador, insumo do painel",
+  "type": "object",
+  "required": [
+    "gerado_em",
+    "contratos"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "gerado_em": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "versao_base_normativa": {
+      "type": "string",
+      "description": "Data do levantamento em referencias-normativas. Ex.: '2026-09-03'"
+    },
+    "agentes_executados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contratos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contrato"
+      }
+    }
+  },
+  "$defs": {
+    "contrato": {
+      "type": "object",
+      "required": [
+        "contrato_id",
+        "vendor",
+        "contagem",
+        "achados"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "contrato_id": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "objeto": {
+          "type": "string"
+        },
+        "documentos_analisados": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contagem": {
+          "type": "object",
+          "required": [
+            "critico",
+            "alto",
+            "medio",
+            "baixo"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "critico": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "alto": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "medio": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "baixo": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "achados": {
+          "type": "array",
+          "description": "Achados consolidados, conforme $defs/achado_consolidado",
+          "items": {
+            "$ref": "#/$defs/achado_consolidado"
+          }
+        },
+        "cruzamentos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "composto_por",
+              "leitura"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^X-\\d+$"
+              },
+              "titulo": {
+                "type": "string"
+              },
+              "composto_por": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 2
+              },
+              "leitura": {
+                "type": "string"
+              },
+              "quantificacao": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "A conta, quando ela existir nos números do contrato"
+              }
+            }
+          }
+        },
+        "divergencias": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "localizacao",
+              "posicoes"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "localizacao": {
+                "type": "string"
+              },
+              "posicoes": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "agente",
+                    "posicao"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "agente": {
+                      "type": "string"
+                    },
+                    "posicao": {
+                      "type": "string"
+                    },
+                    "fundamento": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              },
+              "encaminhamento": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "achados_descartados": {
+          "type": "array",
+          "description": "Achados excluídos pelo orquestrador, com o motivo. Transparência do pipeline",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "agente",
+              "motivo"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "agente": {
+                "type": "string"
+              },
+              "motivo": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "acoes_prioritarias": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string"
+          },
+          "description": "Instrução ao negócio, não diagnóstico"
+        },
+        "arquivo_revisado": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observacoes_do_orquestrador": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "achado_consolidado": {
+      "type": "object",
+      "required": [
+        "id",
+        "contrato_id",
+        "agente",
+        "achado",
+        "localizacao",
+        "trecho",
+        "severidade",
+        "confianca"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[PCD]-\\d{2}$",
+          "description": "Prefixo por matéria: P privacidade, C comercial, D consistência"
+        },
+        "contrato_id": {
+          "type": "string"
+        },
+        "agente": {
+          "type": "string"
+        },
+        "achado": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400,
+          "description": "Uma frase afirmativa: o problema e a consequência. Sem adjetivo de alarme"
+        },
+        "localizacao": {
+          "type": "string",
+          "description": "Cláusula, item, anexo. Ex.: 'Cláusula 5.5' ou 'Anexo C, item C.2'"
+        },
+        "trecho": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 400,
+          "description": "Citação LITERAL do documento. Em achado por ausência de cláusula, cita o trecho onde a lacuna está"
+        },
+        "severidade": {
+          "type": "string",
+          "enum": [
+            "critico",
+            "alto",
+            "medio",
+            "baixo"
+          ]
+        },
+        "fundamento": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Dispositivo citado, coberto por referencias-normativas. null quando não houver"
+        },
+        "posicao_playbook": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "aceitavel",
+            "negociavel",
+            "linha_vermelha",
+            "sem_posicao",
+            null
+          ]
+        },
+        "confianca": {
+          "type": "string",
+          "enum": [
+            "alta",
+            "media",
+            "baixa"
+          ]
+        },
+        "evidencia_faltante": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Obrigatório quando confianca = baixa. O que precisaria ser verificado, em uma frase"
+        },
+        "redline_sugerido": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto de cláusula pronto, no estilo do contrato analisado, sem marcação. null quando não houver solução redigível"
+        },
+        "cruzamentos": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^X-\\d+$"
+          },
+          "default": []
+        },
+        "agentes_creditados": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ids_fundidos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "no_documento": {
+          "type": "boolean",
+          "description": "true se o achado entrou no corpo do .docx (redline e comentário)"
+        },
+        "redline_aplicado": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto que foi para o documento, quando difere do redline_sugerido"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "confianca": {
+                "const": "baixa"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "evidencia_faltante"
+            ],
+            "properties": {
+              "evidencia_faltante": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          }
+        }
+      ],
+      "description": "Achado consolidado: o achado de achado.schema.json mais quatro campos opcionais e fechados"
+    }
+  }
+}

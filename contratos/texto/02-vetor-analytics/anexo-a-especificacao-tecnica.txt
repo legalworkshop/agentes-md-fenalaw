@@ -1,0 +1,35 @@
+ANEXO A — ESPECIFICAÇÃO TÉCNICA
+Vetor Analytics S.A. · Meridiano Alimentos S.A. · versão 1.4 · agosto de 2026
+A.1. Fontes de dados
+Fornecidas pela Meridiano:
+cadastro de clientes do e-commerce (nome, CPF, data de nascimento, correio eletrônico, telefone, endereço);
+histórico transacional de 36 meses (itens, valores, canal, frequência);
+base do programa de fidelidade (pontuação, resgates, categoria do participante);
+registros de navegação do site e do aplicativo, associados ao identificador do cliente.
+Fornecidas pela Vetor:
+Base Setorial Vetor, painel proprietário de comportamento de consumo do setor de alimentos, construído a partir da consolidação de dados de clientes da Vetor e de fontes públicas e licenciadas;
+indicadores socioeconômicos por CEP;
+modelos de propensão pré-treinados da Vetor.
+A.2. Fluxo de processamento
+1.	Ingestão diária da base da Meridiano por API.
+2.	Padronização e deduplicação de registros.
+3.	Enriquecimento: cruzamento dos registros da Meridiano com a Base Setorial Vetor, mediante chave determinística (CPF) e chave probabilística (nome, data de nascimento e CEP), quando a determinística falhar.
+4.	Cálculo de escores de propensão por meio dos modelos proprietários.
+5.	Incorporação dos registros processados à Base Setorial Vetor, em formato pseudonimizado, para fins de recalibragem contínua dos modelos e de composição dos painéis setoriais oferecidos pela Vetor ao mercado.
+6.	Geração e entrega dos relatórios mensais à Meridiano.
+A.3. Produtos entregues mensalmente
+Produto | Descrição
+Segmentação comportamental | Clusterização da base em 9 segmentos, com perfil descritivo
+Escore de propensão à recompra | Nota de 0 a 1000 por cliente, com faixa de confiança
+Escore de risco de evasão | Nota de 0 a 1000 por cliente
+Recomendação de campanha | Sugestão de oferta e canal por segmento
+Benchmark setorial | Posição da Meridiano frente à média do setor, calculada sobre a Base Setorial Vetor
+
+A.4. Retenção técnica
+Dados brutos recebidos da Meridiano: mantidos em ambiente de processamento por 24 meses, para permitir recomposição de séries históricas.
+Registros incorporados à Base Setorial Vetor conforme item A.2.5: mantidos por prazo indeterminado, por integrarem ativo analítico da Vetor.
+Relatórios entregues: disponíveis no portal por 12 meses.
+A.5. Ambiente
+Processamento integralmente em território nacional, em nuvem contratada pela Vetor, região São Paulo. Não há transferência internacional de dados.
+A.6. Melhoria contínua
+A Vetor utiliza os dados processados no âmbito deste projeto para aprimoramento de seus modelos proprietários, o que beneficia todos os seus clientes por meio de ganhos progressivos de acurácia.

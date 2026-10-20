@@ -1,0 +1,52 @@
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS CONTÁBEIS E DE ADMINISTRAÇÃO DE FOLHA DE PAGAMENTO
+Contratada: Áureo Consultoria Contábil Ltda., CNPJ 15.620.447/0001-58, Rua Bela Cintra, 967, 6º andar, Consolação, São Paulo/SP.
+Contratante: Meridiano Alimentos S.A., CNPJ 09.447.216/0001-35, Av. Engenheiro Luís Carlos Berrini, 550, 8º andar, Brooklin, São Paulo/SP.
+Data de assinatura: 5 de fevereiro de 2025.
+
+1. Objeto
+1.1.	A Contratada prestará à Contratante serviços de escrituração contábil e fiscal, apuração de tributos, elaboração de demonstrações financeiras e administração da folha de pagamento, incluindo cálculo de proventos e descontos, geração de guias de recolhimento e cumprimento de obrigações acessórias.
+1.2.	Os serviços abrangem a matriz e o centro de distribuição da Contratante, alcançando aproximadamente 2.400 (dois mil e quatrocentos) empregados.
+2. Obrigações da Contratada
+2.1.	Executar os serviços com zelo, diligência e observância da legislação aplicável e das normas técnicas de contabilidade.
+2.2.	Manter equipe própria, tecnicamente habilitada e registrada no Conselho Regional de Contabilidade.
+2.3.	Cumprir os prazos legais e regulamentares das obrigações a seu cargo, respondendo por multas e acréscimos legais decorrentes de atraso ou erro que lhe sejam imputáveis.
+2.4.	Guardar sigilo sobre as informações da Contratante.
+2.5.	Disponibilizar à Contratante, mensalmente, relatório de execução e arquivos de fechamento em formato estruturado.
+3. Obrigações da Contratante
+3.1.	Fornecer, nos prazos acordados, os documentos e as informações necessários à execução dos serviços.
+3.2.	Comunicar tempestivamente admissões, desligamentos, afastamentos e alterações contratuais de seus empregados.
+3.3.	Efetuar os pagamentos nas condições da Cláusula 6.
+4. Proteção de dados pessoais
+4.1.	Na execução deste contrato, a Contratante atua como controladora e a Contratada como operadora, nos termos da Lei nº 13.709/2018, tratando esta última os dados pessoais exclusivamente segundo as instruções documentadas da Contratante e para as finalidades previstas na Cláusula 1.
+4.2.	As categorias de dados tratadas compreendem dados cadastrais, funcionais, financeiros e de saúde ocupacional dos empregados da Contratante, bem como dados de dependentes para fins de benefícios e de imposto de renda, reconhecendo as Partes o caráter sensível de parte desses dados e a necessidade de proteção reforçada.
+4.3.	A Contratada adotará medidas técnicas e administrativas de segurança, incluindo controle de acesso individualizado por credencial nominal, registro de auditoria, criptografia em trânsito e em repouso e segregação lógica dos ambientes por cliente.
+4.4.	A Contratada não subcontratará terceiros para o tratamento de dados pessoais da Contratante sem autorização prévia, específica e por escrito desta, hipótese em que o subcontratado assumirá obrigações não menos protetivas do que as previstas nesta cláusula, permanecendo a Contratada solidariamente responsável.
+4.5.	O tratamento de dados pessoais ocorrerá integralmente em território nacional, não havendo transferência internacional. Eventual necessidade futura de transferência internacional dependerá de aditamento prévio e da adoção do mecanismo de legitimação exigido pela regulamentação aplicável.
+4.6.	A Contratada comunicará à Contratante qualquer incidente de segurança envolvendo dados pessoais no prazo máximo de 2 (dois) dias úteis contados de seu conhecimento, prestando desde logo as informações disponíveis e complementando-as à medida da apuração, de modo a permitir que a Contratante cumpra seus deveres legais de comunicação à autoridade e aos titulares nos prazos regulamentares.
+4.7.	A Contratada auxiliará a Contratante no atendimento a requisições de titulares e a determinações de autoridade, no prazo de 5 (cinco) dias úteis contados da solicitação.
+4.8.	A Contratada indicou encarregado pelo tratamento de dados pessoais, cuja identidade e canal de contato são divulgados em seu sítio eletrônico e informados à Contratante por escrito.
+4.9.	A Contratada manterá registro das operações de tratamento que realizar por conta da Contratante e o disponibilizará mediante solicitação.
+4.10.	Encerrado o contrato, ou, havendo transição assistida, ao fim dela, a Contratada devolverá à Contratante, em formato estruturado e em até 30 (trinta) dias, os dados pessoais tratados e eliminará as cópias remanescentes em até 60 (sessenta) dias, entregando à Contratante declaração escrita de eliminação, ressalvada a conservação necessária ao cumprimento de obrigação legal ou regulatória, hipótese em que os dados serão mantidos pelo prazo necessário a essa finalidade, com acesso restrito.
+4.11.	A Contratada prestará à Contratante as informações de que dispuser e que forem necessárias à elaboração do relatório de impacto à proteção de dados pessoais relativo aos tratamentos objeto deste contrato, no prazo de 10 (dez) dias úteis contados da solicitação.
+4.12.	A Contratante poderá auditar o cumprimento desta cláusula uma vez por ano, mediante aviso prévio de 15 (quinze) dias, ou a qualquer tempo em caso de incidente.
+5. Responsabilidade
+5.1.	Cada Parte responde pelos danos diretos a que der causa.
+5.2.	A responsabilidade agregada da Contratada limita-se ao valor equivalente a 12 (doze) vezes os honorários mensais vigentes da Cláusula 6.1, não se aplicando tal limite, nem a restrição da Cláusula 5.1 a danos diretos, aos casos de dolo, culpa grave, violação de sigilo ou descumprimento das obrigações da Cláusula 4, às multas, sanções e encargos administrativos ou fiscais decorrentes de erro ou atraso imputável à Contratada, nem aos danos causados a terceiros.
+6. Preço e reajuste
+6.1.	Honorários mensais de R$ 46.700,00 (quarenta e seis mil e setecentos reais), com vencimento no 10º dia de cada mês.
+6.2.	Reajuste anual pela variação do IPCA/IBGE acumulada em doze meses.
+7. Prazo e rescisão
+7.1.	Vigência de 24 (vinte e quatro) meses, renovável por acordo escrito.
+7.2.	A Contratante poderá rescindir este contrato imotivadamente, a qualquer tempo, sem multa ou outro ônus, mediante aviso prévio de 90 (noventa) dias. A Contratada somente poderá fazê-lo mediante aviso prévio de 180 (cento e oitenta) dias, prazo destinado à contratação de substituto e à transição ordenada dos serviços.
+7.3.	Encerrado o contrato por qualquer motivo, a Contratada prestará transição assistida pelo prazo que a Contratante indicar em até 30 (trinta) dias contados do término, de até 90 (noventa) dias, nas condições vigentes e mediante pagamento proporcional ao período, pelo preço vigente, entregando arquivos, memórias de cálculo e documentação.
+7.4.	A Contratada manterá plano de continuidade dos serviços, com tempo máximo de recuperação de 2 (dois) dias úteis, testado ao menos uma vez por ano, e dará à Contratante acesso ao plano e ao resultado do último teste em até 15 (quinze) dias da solicitação.
+7.5.	A Contratada comunicará à Contratante, por escrito, qualquer mudança de seu controle societário em até 10 (dez) dias de sua efetivação, e a Contratante poderá, em até 60 (sessenta) dias do recebimento da comunicação, rescindir este contrato sem multa ou outro ônus, observada a Cláusula 7.3.
+8. Disposições gerais
+8.1.	Alterações somente por instrumento escrito assinado pelas Partes.
+8.2.	A nulidade de qualquer disposição não afetará as demais.
+8.3.	Foro da Comarca de São Paulo/SP.
+São Paulo, 5 de fevereiro de 2025.
+______________________________________________
+Áureo Consultoria Contábil Ltda.
+______________________________________________
+Meridiano Alimentos S.A.

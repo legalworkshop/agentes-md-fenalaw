@@ -1,0 +1,65 @@
+CONTRATO DE LICENCIAMENTO DE SOFTWARE COMO SERVIÇO E PRESTAÇÃO DE SERVIÇOS CORRELATOS
+Este Contrato de Licenciamento de Software como Serviço e Prestação de Serviços Correlatos (o "Contrato") é celebrado em 14 de março de 2024, por e entre:
+NIMBUSFLOW TECNOLOGIA LTDA., sociedade empresária limitada inscrita no CNPJ/MF sob o nº 41.882.503/0001-77, com sede na Rua Doutor Renato Paes de Barros, 1017, conjunto 92, Itaim Bibi, São Paulo/SP, CEP 04530-001, neste ato representada na forma de seu contrato social ("Fornecedora"); e
+MERIDIANO ALIMENTOS S.A., sociedade por ações inscrita no CNPJ/MF sob o nº 09.447.216/0001-35, com sede na Avenida Engenheiro Luís Carlos Berrini, 550, 8º andar, Brooklin, São Paulo/SP, CEP 04571-000, neste ato representada na forma de seu estatuto social ("Cliente").
+Fornecedora e Cliente são referidas individualmente como "Parte" e conjuntamente como "Partes".
+CONSIDERANDO QUE a Fornecedora desenvolveu e opera uma plataforma de gestão de atendimento e relacionamento com consumidores;
+CONSIDERANDO QUE o Cliente deseja licenciar o acesso à referida plataforma para suas operações de atendimento ao consumidor;
+AGORA, PORTANTO, as Partes acordam o quanto segue:
+
+1. DEFINIÇÕES
+1.1.	Os termos abaixo, quando iniciados em letra maiúscula, terão os significados a eles atribuídos nesta Cláusula 1, quer no singular, quer no plural.
+1.1.1.	"Plataforma" significa a solução de software como serviço denominada NimbusFlow Service Cloud, incluindo suas atualizações, correções e novas versões disponibilizadas pela Fornecedora durante a vigência.
+1.1.2.	"Dados do Cliente" significa todo e qualquer dado, informação, registro ou conteúdo inserido, carregado ou gerado pelo Cliente ou por seus Usuários Autorizados por meio da Plataforma.
+1.1.3.	"Usuários Autorizados" significa os empregados, prepostos e prestadores de serviço do Cliente devidamente cadastrados e autorizados a acessar a Plataforma.
+1.1.4.	"Serviços de Suporte" significa as atividades de manutenção corretiva, atendimento técnico e resolução de incidentes descritas no Exhibit A (Escopo de Serviços).
+1.1.5.	"Incidente de Segurança" significa qualquer evento adverso, confirmado ou sob suspeita razoável, que resulte em acesso não autorizado, perda, alteração, divulgação ou destruição dos Dados do Cliente.
+1.1.6.	"Legislação de Proteção de Dados" significa a Lei nº 13.709/2018 e demais normas brasileiras aplicáveis ao tratamento de dados pessoais.
+
+2. OBJETO E LICENÇA
+2.1.	Sujeito aos termos e condições deste Contrato, a Fornecedora concede ao Cliente licença não exclusiva, intransferível e não sublicenciável para acesso e uso da Plataforma, durante a vigência, exclusivamente para as finalidades internas de negócio do Cliente.
+2.2.	A Fornecedora prestará ao Cliente os Serviços de Suporte, na forma e nos níveis descritos no Exhibit A (Escopo de Serviços), o qual integra este Contrato para todos os fins.
+2.3.	Os requisitos técnicos de disponibilidade, continuidade e recuperação encontram-se descritos no Exhibit B (Plano de Continuidade de Negócios), o qual igualmente integra este Contrato.
+2.4.	A descrição da infraestrutura por meio da qual a Plataforma é disponibilizada consta do Exhibit C (Infraestrutura e Hospedagem).
+2.5.	Nada neste Contrato transfere ao Cliente qualquer direito de propriedade intelectual sobre a Plataforma, seu código-fonte, sua arquitetura ou sua documentação, os quais permanecem de titularidade exclusiva da Fornecedora.
+
+3. PREÇO, REAJUSTE E CONDIÇÕES DE PAGAMENTO
+3.1.	Pelo licenciamento da Plataforma e pela prestação dos Serviços de Suporte, o Cliente pagará à Fornecedora a quantia mensal de R$ 38.400,00 (trinta e oito mil e quatrocentos reais), correspondente a até 320 (trezentos e vinte) Usuários Autorizados.
+3.2.	O pagamento será realizado até o 10º (décimo) dia do mês subsequente ao da prestação, mediante apresentação da respectiva nota fiscal.
+3.3.	Os valores previstos na Cláusula 3.1 serão reajustados anualmente, a contar da data de assinatura, pela variação acumulada do índice de preços aplicável ao setor, apurado no período de doze meses imediatamente anterior à data do reajuste.
+3.4.	O atraso no pagamento sujeitará o Cliente a multa de 2% (dois por cento) sobre o valor em aberto, acrescida de juros de mora de 1% (um por cento) ao mês, pro rata die.
+
+4. PRAZO E RENOVAÇÃO
+4.1.	Este Contrato vigorará pelo prazo de 24 (vinte e quatro) meses, contados da data de sua assinatura.
+4.2.	Findo o prazo inicial, este Contrato será automaticamente renovado por sucessivos períodos de 12 (doze) meses, independentemente de manifestação das Partes, salvo se qualquer delas notificar a outra, por escrito, com antecedência mínima de 90 (noventa) dias do respectivo termo final, acerca de sua intenção de não renovar.
+4.3.	Na hipótese de rescisão imotivada pelo Cliente antes do término do prazo então vigente, será devida multa compensatória equivalente a 40% (quarenta por cento) do valor remanescente do período.
+
+5. TRATAMENTO DE DADOS PESSOAIS
+5.1.	As Partes reconhecem que, na execução deste Contrato, a Fornecedora poderá tratar dados pessoais em nome e por conta do Cliente.
+5.2.	Para os fins da Legislação de Proteção de Dados, o Cliente atua na qualidade de controlador e a Fornecedora atua na qualidade de operador, obrigando-se esta última a tratar os dados pessoais exclusivamente conforme as instruções documentadas do Cliente e para as finalidades estritamente necessárias à execução deste Contrato.
+5.3.	A Fornecedora implementará medidas técnicas e administrativas aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão, observados os padrões de mercado aplicáveis.
+5.4.	A Fornecedora poderá contratar terceiros para a execução de atividades acessórias ao objeto deste Contrato, incluindo serviços de infraestrutura, monitoramento e disparo de mensagens transacionais, comprometendo-se a informar o Cliente, sempre que solicitada, acerca da identidade de tais terceiros.
+5.5.	A Fornecedora comunicará ao Cliente a ocorrência de Incidente de Segurança que possa acarretar risco ou dano relevante aos titulares, no prazo de até 10 (dez) dias úteis contados da data em que a Fornecedora tomar conhecimento do evento, fornecendo as informações de que dispuser naquele momento.
+5.6.	Não obstante o disposto acima, a Fornecedora não será responsável por qualquer descumprimento da Legislação de Proteção de Dados decorrente de instruções emanadas do Cliente.
+5.7.	Encerrada a vigência, a Fornecedora manterá os Dados do Cliente disponíveis para exportação por 30 (trinta) dias, após o que poderá eliminá-los.
+
+6. CONFIDENCIALIDADE
+6.1.	Cada Parte obriga-se a manter em sigilo todas as informações confidenciais a que tiver acesso em razão deste Contrato, delas não se utilizando senão para as finalidades aqui previstas.
+6.2.	As obrigações desta Cláusula 6 subsistirão por 5 (cinco) anos contados do término deste Contrato, por qualquer motivo.
+
+7. LIMITAÇÃO DE RESPONSABILIDADE
+7.1.	Na máxima extensão permitida pela lei aplicável, a responsabilidade total e agregada da Fornecedora perante o Cliente, por quaisquer perdas, danos, custos ou despesas decorrentes deste Contrato ou com ele relacionados, seja qual for a natureza da pretensão, não excederá o valor de 1 (uma) mensalidade efetivamente paga pelo Cliente no mês imediatamente anterior ao do evento que houver dado causa à pretensão.
+7.2.	Em nenhuma hipótese a Fornecedora responderá por lucros cessantes, perda de receita, perda de dados, danos indiretos, incidentais, especiais ou consequenciais, ainda que advertida da possibilidade de sua ocorrência.
+7.3.	A limitação prevista na Cláusula 7.1 não comporta exceção, aplicando-se inclusive a multas, sanções administrativas ou condenações de qualquer natureza impostas ao Cliente por autoridade pública em razão de fatos relacionados à Plataforma.
+
+8. DISPOSIÇÕES GERAIS
+8.1.	Este Contrato, juntamente com seus Exhibits, constitui o inteiro acordo entre as Partes quanto ao seu objeto, substituindo quaisquer entendimentos anteriores, verbais ou escritos.
+8.2.	Nenhuma alteração deste Contrato será válida se não constar de instrumento escrito assinado por ambas as Partes.
+8.3.	A tolerância de qualquer das Partes quanto ao descumprimento de qualquer obrigação não importará novação nem renúncia de direitos.
+8.4.	Este Contrato é regido pelas leis da República Federativa do Brasil. As Partes elegem o foro da Comarca de São Paulo, Estado de São Paulo, com renúncia a qualquer outro, por mais privilegiado que seja.
+E, por estarem assim justas e contratadas, as Partes firmam o presente instrumento em 2 (duas) vias de igual teor e forma.
+São Paulo, 14 de março de 2024.
+______________________________________________
+NIMBUSFLOW TECNOLOGIA LTDA.
+______________________________________________
+MERIDIANO ALIMENTOS S.A.

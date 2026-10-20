@@ -1,0 +1,33 @@
+EXHIBIT C — INFRAESTRUTURA E HOSPEDAGEM
+Contrato de Licenciamento de Software como Serviço — NimbusFlow Tecnologia Ltda. e Meridiano Alimentos S.A.
+Documento técnico · versão 2.1 · atualizado em 06 de fevereiro de 2024
+
+C.1. ARQUITETURA GERAL
+A Plataforma é operada em modelo multi-tenant sobre infraestrutura de nuvem pública contratada pela Fornecedora junto a provedor internacional de serviços de computação em nuvem. O isolamento entre clientes é lógico, por identificador de tenant, não havendo segregação física de instâncias.
+C.2. REGIÕES DE PROCESSAMENTO E ARMAZENAMENTO
+Componente | Região primária | Região de contingência
+Banco de dados transacional | sa-east-1 (São Paulo) | us-east-1 (Norte da Virgínia, Estados Unidos)
+Repositório de anexos e gravações de chamadas | us-east-1 (Norte da Virgínia, Estados Unidos) | us-west-2 (Oregon, Estados Unidos)
+Índice de busca e telemetria | us-east-1 (Norte da Virgínia, Estados Unidos) | —
+Backups completos (retenção de 90 dias) | us-east-1 (Norte da Virgínia, Estados Unidos) | —
+
+A replicação entre a região primária e a região de contingência do banco de dados transacional é contínua e assíncrona, com janela de atraso inferior a 60 segundos.
+C.3. SERVIÇOS DE TERCEIROS INTEGRADOS À OPERAÇÃO
+Fornecedor | Serviço prestado | Dados acessados | Localização do processamento
+Sendgrid-like provider (Zephyr Mail Systems Inc.) | Disparo de mensagens transacionais por correio eletrônico | Nome, endereço de correio eletrônico, número do chamado, conteúdo da mensagem | Estados Unidos
+Twilio-like provider (Orbital Messaging LLC) | Disparo de mensagens de texto | Nome, número de telefone, conteúdo da mensagem | Estados Unidos
+Observability vendor (Lumen Metrics Ltd.) | Monitoramento de desempenho e registro de erros da aplicação | Identificadores de sessão, registros de requisição, eventualmente conteúdo de campos de formulário capturado em log de erro | Irlanda
+
+A Fornecedora mantém contratos próprios com os fornecedores acima, os quais são revistos periodicamente por sua equipe de engenharia.
+C.4. TRANSCRIÇÃO AUTOMATIZADA DE CHAMADAS
+As gravações de chamadas coletadas pelo módulo Voice Connect são submetidas a serviço de transcrição automatizada operado pelo provedor de nuvem na região us-east-1. As transcrições são armazenadas junto ao repositório de anexos e indexadas para busca.
+C.5. CONTROLES DE SEGURANÇA
+criptografia em trânsito por TLS 1.2 ou superior;
+criptografia em repouso com chaves gerenciadas pelo provedor de nuvem;
+autenticação de Usuários Autorizados por credencial e segundo fator opcional;
+registro de auditoria de acessos administrativos, com retenção de 12 meses;
+testes de intrusão anuais conduzidos por terceiro independente.
+C.6. ACESSO DA EQUIPE DA FORNECEDORA
+Equipes de suporte de nível 2 e 3 da Fornecedora possuem acesso administrativo aos ambientes de produção, mediante credencial nominal e registro de sessão. Parte da equipe de suporte de nível 3 encontra-se alocada na subsidiária da Fornecedora em Buenos Aires, Argentina.
+C.7. JANELAS DE MANUTENÇÃO
+Manutenções programadas ocorrem aos domingos, entre 2h e 6h (horário de Brasília), com comunicação prévia de 48 horas.

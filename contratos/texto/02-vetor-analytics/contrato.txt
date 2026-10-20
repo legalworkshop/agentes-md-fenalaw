@@ -1,0 +1,37 @@
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE ANÁLISE DE DADOS
+Partes
+Vetor Analytics S.A., CNPJ 33.104.679/0001-42, Rua Cardeal Arcoverde, 2365, sala 41, Pinheiros, São Paulo/SP ("Vetor").
+Meridiano Alimentos S.A., CNPJ 09.447.216/0001-35, Av. Eng. Luís Carlos Berrini, 550, 8º andar, São Paulo/SP ("Meridiano").
+Data: 2 de setembro de 2026.
+1. O que a Vetor faz
+1.1. A Vetor presta serviços de análise de comportamento de consumo e enriquecimento de base de clientes, entregando à Meridiano segmentações, escores de propensão e recomendações de campanha.
+1.2. O escopo detalhado, as fontes de dados e a metodologia estão no Anexo A — Especificação Técnica, que faz parte deste contrato.
+2. Como funciona na prática
+2.1. A Meridiano disponibiliza à Vetor, por integração automatizada, os dados de sua base de clientes e de seu programa de fidelidade.
+2.2. A Vetor processa esses dados e devolve à Meridiano os resultados descritos no Anexo A, em periodicidade mensal.
+2.3. A Meridiano é responsável pela licitude da coleta dos dados que disponibiliza.
+3. Proteção de dados
+3.1. Para fins da Lei nº 13.709/2018, a Meridiano é a controladora dos dados pessoais e a Vetor atua exclusivamente como operadora, tratando os dados conforme as instruções da Meridiano.
+3.2. A Vetor não utilizará os dados pessoais recebidos para finalidade diversa da execução deste contrato.
+3.3. A Vetor adotará medidas de segurança compatíveis com o estado da técnica e comunicará à Meridiano qualquer incidente de segurança em até 2 (dois) dias úteis.
+3.4. A Vetor manterá registro das operações de tratamento que realizar.
+4. Resultados e propriedade
+4.1. Os relatórios, segmentações e escores entregues à Meridiano são de titularidade da Meridiano.
+4.2. Os métodos, algoritmos, modelos estatísticos e quaisquer aprimoramentos deles decorrentes são e permanecem de titularidade da Vetor.
+4.3. As Partes reconhecem que a operação dos serviços gera dados derivados, agregados e insumos de modelagem, cuja titularidade seguirá a natureza do respectivo elemento.
+5. Preço
+5.1. R$ 22.000,00 (vinte e dois mil reais) por mês, com nota fiscal emitida no primeiro dia útil de cada mês.
+5.2. Reajuste anual pelo IPCA.
+6. Prazo
+6.1. 12 (doze) meses, renováveis por igual período mediante acordo escrito.
+6.2. Qualquer das Partes pode rescindir sem causa mediante aviso de 60 (sessenta) dias.
+7. Confidencialidade
+7.1. As Partes manterão sigilo sobre as informações trocadas, por 3 (três) anos após o término.
+8. Responsabilidade
+8.1. A responsabilidade de cada Parte limita-se aos danos diretos comprovados, até o valor equivalente a 6 (seis) mensalidades.
+9. Geral
+9.1. Alterações somente por escrito.
+9.2. Foro de São Paulo/SP.
+São Paulo, 2 de setembro de 2026.
+______________________________________________
+Vetor Analytics S.A. — Meridiano Alimentos S.A.

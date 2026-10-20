@@ -4,9 +4,11 @@ Material da masterclass **"Como Montar seus Agentes de IA: Arquitetura, Contexto
 Governança"**, Fenalaw 2026, com Anderson Fraiha Machado (FGV Direito SP) e Flávio C. Fujita
 (The Legal Workshop).
 
-Aqui está só a estrutura de instruções: os arquivos `.md` que dizem a um agente de IA quem
-ele é, o que olhar e como fazer. É o esqueleto de um time de agentes que revisa contrato de
-fornecedor e devolve redline com comentários. O caso é fictício (Meridiano Alimentos S.A.).
+Aqui está a estrutura de instruções, isto é, os arquivos `.md` que dizem a um agente de IA
+quem ele é, o que olhar e como fazer, e o necessário para testá-la: quatro contratos
+fictícios, os formatos de saída e dois scripts de apoio. É um time de agentes que revisa
+contrato de fornecedor e devolve redline com comentários. O caso é fictício (Meridiano
+Alimentos S.A.).
 
 ## O mapa
 
@@ -25,7 +27,12 @@ fornecedor e devolve redline com comentários. O caso é fictício (Meridiano Al
         ├── referencias-normativas/    LGPD e resoluções da ANPD, com fonte
         ├── playbook-meridiano/        posições, fallbacks e linhas vermelhas do cliente
         ├── redline-docx/              mecânica do redline e do comentário ancorado
-        └── visual-law/                método do contrato em forma visual
+        └── visual-law/                método do contrato em forma visual, com o montador
+├── contratos/
+│   ├── docx/                          os quatro contratos fictícios, com anexos e aditivo
+│   ├── texto/                         o texto extraído, que é o que os agentes leem
+│   └── build/docx2txt.py              extrai o texto de um .docx novo
+└── schemas/                           formato do achado, da matriz de risco e um exemplo
 ```
 
 A pasta `.claude` pode aparecer oculta no Mac (no Finder, Cmd + Shift + .).
@@ -43,12 +50,25 @@ A pasta `.claude` pode aparecer oculta no Mac (no Finder, Cmd + Shift + .).
    na versão de conversa, o conteúdo dos agentes e das skills funciona como instrução de
    projeto ou de GPT personalizado.
 
-## O que não vem aqui
+## Como testar
 
-Os contratos fictícios, os schemas de JSON, os scripts de apoio (extração de texto, montagem
-do Visual Law) e as saídas da demonstração ficam fora. Os arquivos citam essas pastas
-(`contratos/`, `schemas/`, `saida/`) porque descrevem o projeto completo: ajuste os caminhos
-ao seu.
+Com uma ferramenta agêntica que lê a pasta do projeto (o Claude Code lê `.claude/` como
+está; em outra, aponte o arquivo raiz para o `CLAUDE.md`):
+
+1. Abra a pasta do repositório na ferramenta.
+2. Peça um especialista só, num contrato só: "rode o agente privacidade-lgpd no contrato
+   01-nimbusflow". Ele grava os achados em `saida/achados/`, no formato de
+   `schemas/achado.schema.json`. Compare com `schemas/exemplo-achados-ficticio.json`.
+3. Rode os outros dois especialistas no mesmo contrato e depois o orquestrador, que cruza os
+   três e redige o `.docx` revisado em `saida/revisados/`.
+4. Teste o contrato 04 também.
+
+Para usar um contrato seu, ponha o `.docx` em `contratos/docx/<id>/` e rode
+`python contratos/build/docx2txt.py --only <id>` (requer `pip install python-docx`). O
+Visual Law em PDF precisa de Python e de Chrome ou Edge instalados.
+
+As saídas da demonstração não vêm aqui, de propósito: o teste vale mais quando você não sabe
+de antemão o que os agentes vão achar.
 
 ## Ressalvas
 

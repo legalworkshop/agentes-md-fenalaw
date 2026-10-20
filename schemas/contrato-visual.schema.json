@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contrato visual (Visual Law)",
+  "type": "object",
+  "required": [
+    "contrato_id",
+    "titulo_curto",
+    "versao",
+    "paginas",
+    "rodape"
+  ],
+  "$defs": {
+    "clausulas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "texto",
+        "clausulas"
+      ],
+      "properties": {
+        "texto": {
+          "type": "string"
+        },
+        "clausulas": {
+          "$ref": "#/$defs/clausulas"
+        }
+      }
+    },
+    "linha": {
+      "type": "object",
+      "required": [
+        "clausulas"
+      ],
+      "properties": {
+        "rotulo": {
+          "type": "string"
+        },
+        "texto": {
+          "type": "string"
+        },
+        "clausulas": {
+          "$ref": "#/$defs/clausulas"
+        },
+        "destaque": {
+          "type": "string"
+        },
+        "grupo": {
+          "enum": [
+            "brasil",
+            "exterior"
+          ]
+        },
+        "terceiro": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string",
+          "description": "Fluxo: identificador do destino, para outro destino apontar para ele em `via`."
+        },
+        "via": {
+          "description": "Fluxo: destino de onde sai a seta deste (suboperador de outro destino), em vez da origem. Índice 0-based em `destinos` ou o `id` de outro destino. O destino apontado vem antes, não tem `via` próprio e está no mesmo `grupo`; entre os dois só há outros destinos que saem dele.",
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "campos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "contrato_id": {
+      "type": "string"
+    },
+    "titulo_curto": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "versao": {
+      "type": "object",
+      "required": [
+        "tipo",
+        "rotulo"
+      ],
+      "properties": {
+        "tipo": {
+          "enum": [
+            "aprovada",
+            "original"
+          ]
+        },
+        "rotulo": {
+          "type": "string",
+          "maxLength": 50
+        }
+      }
+    },
+    "rodape": {
+      "type": "string"
+    },
+    "paginas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "titulo",
+          "blocos"
+        ],
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "maxLength": 90
+          },
+          "blocos": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "tipo"
+              ],
+              "properties": {
+                "tipo": {
+                  "enum": [
+                    "numeros",
+                    "linha_do_tempo",
+                    "duas_colunas",
+                    "fluxo",
+                    "passos",
+                    "tabela",
+                    "glossario",
+                    "texto"
+                  ]
+                },
+                "titulo": {
+                  "type": "string"
+                },
+                "itens": {
+                  "type": "array"
+                },
+                "marcos": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "quando",
+                      "o_que",
+                      "clausulas"
+                    ],
+                    "properties": {
+                      "tipo": {
+                        "enum": [
+                          "ponto",
+                          "durante"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "colunas": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "origem": {
+                  "type": "string"
+                },
+                "destinos": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/linha"
+                  }
+                },
+                "passos": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/linha"
+                  }
+                },
+                "linhas": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/linha"
+                  }
+                },
+                "paragrafos": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/item"
+                  }
+                },
+                "introducao": {
+                  "type": "string"
+                },
+                "variante": {
+                  "enum": [
+                    "enumeracao"
+                  ]
+                },
+                "manter_com_seguinte": {
+                  "type": "boolean"
+                },
+                "matriz": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "rotulo",
+                      "largura"
+                    ],
+                    "properties": {
+                      "rotulo": {
+                        "type": "string"
+                      },
+                      "largura": {
+                        "type": "number"
+                      },
+                      "forte": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

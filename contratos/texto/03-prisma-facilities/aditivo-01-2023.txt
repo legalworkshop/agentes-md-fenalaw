@@ -1,0 +1,28 @@
+PRIMEIRO TERMO ADITIVO AO CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE CONSERVAÇÃO, LIMPEZA E PORTARIA
+Contratada: Prisma Facilities Serviços Ltda. — CNPJ 07.315.884/0001-93
+Contratante: Meridiano Alimentos S.A. — CNPJ 09.447.216/0001-35
+Contrato originário: Instrumento particular firmado em 19 de junho de 2018
+As partes acima qualificadas resolvem aditar o contrato originário, nos termos a seguir.
+
+1. Objeto do aditamento
+1.1. O presente termo tem por objeto a inclusão, no escopo dos serviços, da operação do novo sistema de controle de acesso por reconhecimento facial implantado pela Contratante nas unidades da Avenida Engenheiro Luís Carlos Berrini, 550, e do centro de distribuição de Cajamar.
+1.2. Fica igualmente incluída a utilização, pela Contratada, dos terminais de reconhecimento facial para a marcação eletrônica de ponto dos empregados por ela alocados nos postos de trabalho, em substituição ao livro de ponto manual.
+2. Da operação do sistema
+2.1. A Contratada operará os terminais de captura facial instalados nas portarias e nos acessos de doca, realizando o cadastramento de visitantes, prestadores e transportadores, o que compreende a captura da imagem facial, a conferência do documento de identificação e a liberação do acesso.
+2.2. A Contratada realizará o cadastramento facial de seus próprios empregados alocados nos postos, para fins de registro de jornada.
+2.3. Os terminais e o sistema de gerenciamento são de propriedade da Contratante, que suporta os custos de licenciamento e manutenção.
+2.4. A Contratada designará dois operadores treinados por unidade, com perfil de acesso administrativo ao sistema, habilitados a cadastrar, consultar, editar e excluir registros de acesso.
+2.5. O controle de jornada dos empregados alocados permanece sob responsabilidade exclusiva da Contratada, que receberá do sistema, diariamente, arquivo com a totalidade das marcações e manterá o registro de ponto em sistema próprio, na forma da legislação aplicável, vedadas a edição e a exclusão de marcações de ponto no sistema da Contratante.
+3. Da retenção dos registros
+3.1. Os registros de acesso e as imagens capturadas serão mantidos no sistema pelo prazo de 24 (vinte e quatro) meses, findo o qual serão descartados por rotina automatizada.
+3.2. Os registros de ponto serão guardados pela Contratada, em seu sistema próprio, pelo prazo legal aplicável.
+4. Do acréscimo de preço
+4.1. Em razão do acréscimo de escopo, o valor mensal previsto na Cláusula Quinta do contrato originário passa de R$ 147.300,00 para R$ 163.850,00 (cento e sessenta e três mil, oitocentos e cinquenta reais), a partir da competência de outubro de 2023.
+4.2. O acréscimo contempla a alocação dos dois operadores por unidade e o treinamento inicial da equipe, no valor de R$ 16.550,00 (dezesseis mil e quinhentos reais) mensais.
+5. Ratificação
+5.1. Permanecem inalteradas todas as demais cláusulas e condições do contrato originário, que ora se ratificam integralmente.
+São Paulo, 26 de setembro de 2023.
+______________________________________________
+PRISMA FACILITIES SERVIÇOS LTDA.
+______________________________________________
+MERIDIANO ALIMENTOS S.A.

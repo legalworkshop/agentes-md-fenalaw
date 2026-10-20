@@ -1,0 +1,57 @@
+{
+  "contrato_id": "00-exemplo-ficticio",
+  "agente": "privacidade-lgpd",
+  "executado_em": "2026-10-27T09:00:00Z",
+  "documentos_lidos": [
+    "contrato-exemplo.docx",
+    "anexo-1-especificacao.docx"
+  ],
+  "achados": [
+    {
+      "id": "P-01",
+      "contrato_id": "00-exemplo-ficticio",
+      "agente": "privacidade-lgpd",
+      "achado": "O contrato declara o fornecedor como operador, mas o anexo o autoriza a usar os cadastros de entregadores para calibrar o próprio algoritmo de roteamento oferecido a outros clientes, finalidade própria sem base legal nem informação ao titular.",
+      "localizacao": "Anexo 1, item 1.4, contra a Cláusula 8.1",
+      "trecho": "Os dados de trajeto e desempenho dos entregadores cadastrados poderão ser utilizados pela Contratada para o aperfeiçoamento contínuo do Motor de Rotas.",
+      "severidade": "critico",
+      "fundamento": "LGPD, art. 5º, VI e VII, c/c art. 39; LGPD, art. 6º, I",
+      "posicao_playbook": "linha_vermelha",
+      "confianca": "alta",
+      "evidencia_faltante": null,
+      "redline_sugerido": "1.4. É vedado à Contratada utilizar os dados pessoais tratados em razão deste Contrato para qualquer finalidade própria, inclusive o treinamento ou o aperfeiçoamento de modelos, sistemas ou serviços oferecidos a terceiros.",
+      "cruzamentos": ["X-3"]
+    },
+    {
+      "id": "P-02",
+      "contrato_id": "00-exemplo-ficticio",
+      "agente": "privacidade-lgpd",
+      "achado": "O contrato não prevê devolução nem eliminação dos dados ao término, e a retenção técnica fica a critério do fornecedor, sem prazo nem comprovação.",
+      "localizacao": "Cláusula 8.6",
+      "trecho": "Findo o Contrato, a Contratada manterá os registros pelo período que julgar tecnicamente adequado.",
+      "severidade": "alto",
+      "fundamento": "LGPD, arts. 15 e 16",
+      "posicao_playbook": "linha_vermelha",
+      "confianca": "alta",
+      "evidencia_faltante": null,
+      "redline_sugerido": "8.6. Findo o Contrato, a Contratada devolverá os dados pessoais à Contratante em até 30 (trinta) dias e os eliminará em até 60 (sessenta) dias, entregando declaração escrita de eliminação, ressalvada a conservação exigida por obrigação legal.",
+      "cruzamentos": []
+    },
+    {
+      "id": "P-03",
+      "contrato_id": "00-exemplo-ficticio",
+      "agente": "privacidade-lgpd",
+      "achado": "O anexo menciona hospedagem em provedor de nuvem sem indicar região ou país, o que não permite afirmar nem afastar transferência internacional.",
+      "localizacao": "Anexo 1, item 1.7",
+      "trecho": "A plataforma é hospedada em provedor de nuvem pública de reconhecida reputação no mercado.",
+      "severidade": "medio",
+      "fundamento": null,
+      "posicao_playbook": "sem_posicao",
+      "confianca": "baixa",
+      "evidencia_faltante": "Região de hospedagem e país de cada suboperador, a obter do fornecedor antes da assinatura.",
+      "redline_sugerido": null,
+      "cruzamentos": []
+    }
+  ],
+  "observacoes": "Exemplo fictício, para calibrar o formato. O contrato 00-exemplo-ficticio não existe e nenhum trecho acima pertence aos contratos da demonstração. Note os três perfis de achado: crítico com cruzamento, alto com redline pronto, e confiança baixa com evidência faltante e sem fundamento."
+}
